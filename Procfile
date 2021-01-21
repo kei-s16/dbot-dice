@@ -1,0 +1,1 @@
+dicebot: python main.py
