@@ -2,7 +2,7 @@
 ### なにこれ？
 Discordでダイス振るやつ  
 
-### requirements
+### Requirements
 - Python 3
 - Discord Bot Token
 
