@@ -6,6 +6,9 @@ Discordでダイス振るやつ
 - Python 3
 - Discord Bot Token
 
+### Deploy
+HerokuのFree Dynoに環境変数 `DISCORD_ACCESS_TOKEN` をセットしてデプロイ  
+
 ### Usage
 #### ダイスを振る
 !roll {振るダイスの個数}d{振るダイスの面数}  
