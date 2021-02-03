@@ -2,9 +2,12 @@
 ### なにこれ？
 Discordでダイス振るやつ  
 
-### requirements
+### Requirements
 - Python 3
 - Discord Bot Token
+
+### Deploy
+HerokuのFree Dynoに環境変数 `DISCORD_ACCESS_TOKEN` をセットしてデプロイ(手動)  
 
 ### Usage
 #### ダイスを振る
