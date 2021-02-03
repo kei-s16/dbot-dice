@@ -7,7 +7,7 @@ Discordでダイス振るやつ
 - Discord Bot Token
 
 ### Deploy
-HerokuのFree Dynoに環境変数 `DISCORD_ACCESS_TOKEN` をセットしてデプロイ  
+HerokuのFree Dynoに環境変数 `DISCORD_ACCESS_TOKEN` をセットしてデプロイ(手動)  
 
 ### Usage
 #### ダイスを振る
