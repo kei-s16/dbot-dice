@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discord-dicebot-deployment
+  labels:
+      app: discord-dicebot
+spec:
+  selector:
+    matchLabels:
+      app: discord-dicebot
+  template:
+    metadata:
+      labels:
+        app: discord-dicebot
+    spec:
+      containers:
+        - name: dicebot
+          image: dicebot:latest # change your local or private repos
+          env:
+            - name: DISCORD_ACCESS_TOKEN
+              value: "ENTER YOUR DISCORD ACCESS TOKEN"
+      dnsPolicy: 'None'
+      dnsConfig:
+        nameservers:
+          - 8.8.8.8
+          - 8.8.4.4
