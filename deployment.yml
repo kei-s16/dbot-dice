@@ -2,13 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: discord-dicebot
+  name: discord-dicebot-deployment
   labels:
-    app: discord-dicebot
+      app: discord-dicebot
 spec:
-  containers:
-  - name: dicebot
-    image: dicebot:latest # change your local or private repos
-    env:
-      - name: DISCORD_ACCESS_TOKEN
-        value: "ENTER YOUR DISCORD ACCESS TOKEN"
+  selector:
+    matchLabels:
+      app: discord-dicebot
+  template:
+    metadata:
+      labels:
+        app: discord-dicebot
+    spec:
+      containers:
+        - name: dicebot
+          image: dicebot:latest # change your local or private repos
+          env:
+            - name: DISCORD_ACCESS_TOKEN
+              value: "ENTER YOUR DISCORD ACCESS TOKEN"
