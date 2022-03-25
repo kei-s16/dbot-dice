@@ -1,4 +1,5 @@
-FROM python:3.9.2-alpine3.13
+ARG TAG="3.9.2-alpine3.13"
+FROM python:$TAG
 
 WORKDIR /usr/src/app
 
