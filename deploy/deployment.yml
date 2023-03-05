@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: dicebot
-          image: dicebot:latest # change your local or private repos
+          image: ghcr.io/kei-s16/dbot-dice:latest
           env:
             - name: DISCORD_ACCESS_TOKEN
               value: "ENTER YOUR DISCORD ACCESS TOKEN"
