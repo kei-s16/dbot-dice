@@ -2,7 +2,7 @@ name: 'Push container image to ghcr.io'
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "feature/push-image-to-ghcr" ]
 
 jobs:
   build:
