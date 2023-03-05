@@ -15,7 +15,7 @@ jobs:
     - name: "コンテナイメージをビルドする"
       run: |
         docker build . --file ./docker/python/Dockerfile --tag ghcr.io/kei-s16/dbot-dice:latest
-        docker tag ghcr.io/kei-s16/dbot-dice:${{ github.sha }}
+        docker tag ghcr.io/kei-s16/dbot-dice:latest ghcr.io/kei-s16/dbot-dice:${{ github.sha }}
     - name: "ghcr.ioにログインする"
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u USERNAME --password-stdin
     - name: "ghcr.ioにコンテナイメージをpushする"
