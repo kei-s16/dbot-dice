@@ -6,7 +6,10 @@ import os
 import sys
 
 
-bot = commands.Bot(command_prefix='!')
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='!', intents=intents)
+
 token = os.getenv('DISCORD_ACCESS_TOKEN')
 
 roll_pattern = re.compile(r'[0-9]+d[0-9]+', re.IGNORECASE)
