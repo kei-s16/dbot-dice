@@ -19,6 +19,4 @@ jobs:
     - name: "ghcr.ioにログインする"
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u USERNAME --password-stdin
     - name: "ghcr.ioにコンテナイメージをpushする"
-      run: |
-        docker push ghcr.io/kei-s16/dbot-dice:latest
-        docker push ghcr.io/kei-s16/dbot-dice:${{ github.sha }}
+      run: docker push ghcr.io/kei-s16/dbot-dice:latest
