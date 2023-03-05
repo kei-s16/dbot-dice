@@ -1,4 +1,4 @@
-name: 'Push container image to ghcr.io'
+name: 'ghcr.ioへのイメージpush'
 
 on:
   push:
